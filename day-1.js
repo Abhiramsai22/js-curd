@@ -20,3 +20,4 @@ calculate(10,5,function(x,y){
     return x-y;
 })
 console.log("Difference of :"+res)
+
