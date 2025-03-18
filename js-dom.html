@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container>div{
+            border: 2px solid black;
+            padding: 20px;
+            margin: 8px;
+        }
+        .title{
+            padding: 10px;
+            margin: 10px;
+        }
+        .input>*{
+            padding: 100px;
+        }
+        .des{
+            padding: 15px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" id="title" placeholder="title" class="title"> 
+    <input type="text" id="price" placeholder="enter the price" class="title"> 
+    <input type="text" id="description" placeholder="enter the description" class="des"> 
+    <button id="btn" class="title">Add Data</button>
+    <script src="./js-dom.js"></script>
+    <div class="container" id="container"></div>
+</body>
+</html>
