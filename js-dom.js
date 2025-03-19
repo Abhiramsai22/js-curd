@@ -73,11 +73,3 @@ function deletedata(id){
 }
 
 getdata();
-
-document.getElementById("myInput").addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-        let value = this.value;
-        console.log("Entered Data:", value);
-        this.value = ""; // Clear input after entry
-    }
-});
