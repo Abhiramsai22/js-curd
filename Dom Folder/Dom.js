@@ -87,6 +87,7 @@ function displayData(products) {
         `;
         container.appendChild(item);
     });
+    loader.remove();
 }
 async function updatedata(id) {
     try{
