@@ -1,5 +1,5 @@
 {
-  "products": [
+  "users": [
     {
       "id": "6",
       "title": "Solid Gold Petite Micropave ",
@@ -191,6 +191,21 @@
       "title": "Gagvar",
       "price": "$9990000",
       "description": "Excelent car and strongest"
+    },
+    {
+      "id": "a585",
+      "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+      "price": "109"
+    },
+    {
+      "id": "eca6",
+      "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+      "price": "100000"
+    },
+    {
+      "id": "3ecf",
+      "title": "Hia",
+      "price": "1000"
     }
   ]
 }

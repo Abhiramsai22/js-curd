@@ -21,7 +21,7 @@
 
 let container = document.createElement("div");
 document.body.appendChild(container); // Append the container to the body
-let url = "http://localhost:2000/products";
+let url = "http://localhost:5000/users";
 
 let titleinput = document.createElement("title");
 let priceinput = document.createElement("price");

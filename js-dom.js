@@ -22,7 +22,7 @@ btn.addEventListener("click",function(){
                 "description":description.value
             })
         }
-        fetch("http://localhost:8000/products",options)
+        fetch("http://localhost:8000/users",options)
         .then(res=>{
             if(res.ok){
                 title.value='';
@@ -36,7 +36,7 @@ btn.addEventListener("click",function(){
 })
 
 function getdata() {
-    fetch("http://localhost:8000/products")
+    fetch("http://localhost:8000/users")
     .then(res => res.json())
     .then(data => displaydata(data))
     .catch(error => console.error("Error fetching data:", error));
@@ -62,7 +62,7 @@ function deletedata(id){
     let options = {
         "method":"DELETE"
     }
-    fetch(`http://localhost:8000/products/${id}`,options)
+    fetch(`http://localhost:8000/users/${id}`,options)
     .then(res=>{
         if(res.ok){
             getdata();

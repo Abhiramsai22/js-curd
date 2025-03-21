@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            padding: 5px;
+            text-align: center;
+        }
+        .item {
+            padding: 10px;
+            border: 2px solid darkred;
+            margin: 10px;
+            background-color: lightcoral
+        }
+        img {
+            max-width: 100%;
+            object-fit: contain;
+            image-rendering: crisp-edges;
+        }
+        p{
+            font-size: 1.3rem;
+        }
+        img:hover {
+            width: 30%;
+            object-fit: cover;
+            transition: 3s ease;
+        }
+        /* Centered Loading Spinner */
+.loader {
+  border: 8px solid black;       /* Light grey */
+  border-top: 8px solid lightseagreen;   /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  
+  /* Centering the loader */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  z-index: 999;                    /* Ensure it's on top */
+  display: none;                    /* Hidden by default */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+    </style>
+</head>
+<body>
+    <!-- <div class="container" id="container"> -->
+    <div class="container" id="container">
+        <div class="loader" id="loader"></div>
+    </div>
+    <script src="./index2.js"></script>
+</body>
+</html>
